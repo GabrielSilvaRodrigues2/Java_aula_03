@@ -1,12 +1,12 @@
 public class PetMachine {
 
-    private boolean clean;
-    private int water;
-    private int shampoo;
+    private boolean clean = true;
+    private int water = 30;
+    private int shampoo = 10;
 
     private Pet pet;
 
-    private void takeAShower(){
+    public void takeAShower(){
         if(this.pet == null){
             System.out.println("Coloque o pet na máquina para iniciar.");
             return;
@@ -72,7 +72,7 @@ public class PetMachine {
         this.water -= 10;
         this.shampoo -= 2;
         this.clean=true;
-        System.out.println("A máquina está limpa.");
+        System.out.println("A máquina foi limpa.");
 
     }
 
